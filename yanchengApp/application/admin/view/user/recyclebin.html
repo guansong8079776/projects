@@ -1,0 +1,8 @@
+{extend name="template/recyclebin" /}
+{block name="script"}
+<script>
+    $(function () {
+        $("[name='level']").find("[value='{$Request.param.level}']").attr("selected", true);
+    })
+</script>
+{/block}
